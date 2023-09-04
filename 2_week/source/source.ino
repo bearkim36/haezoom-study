@@ -64,8 +64,8 @@ void post_send_on() {
 // Restful API 인터페이스에 메서드 할당
 void config_rest_server_routing() {
   http_rest_server.on("/", HTTP_GET, get_home);  
-  http_rest_server.on("/on", HTTP_POST, post_send_on);  
-  http_rest_server.on("/off", HTTP_POST, post_send_off);  
+  http_rest_server.on("/on", HTTP_GET, post_send_on);  
+  http_rest_server.on("/off", HTTP_GET, post_send_off);  
 }
 
 void setup(void) {
