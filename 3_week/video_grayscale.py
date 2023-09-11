@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture("rtsp://192.168.0.20/profile2/media.smp");
+cap = cv2.VideoCapture("video36.avi");
 
 while True:
     success, img = cap.read()

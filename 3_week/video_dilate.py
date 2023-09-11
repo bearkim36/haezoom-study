@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture("rtsp://192.168.0.20/profile2/media.smp");
+cap = cv2.VideoCapture("video36.avi");
 kernel = np.ones((5,5), np.uint8)
 
 while True:
