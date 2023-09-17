@@ -24,7 +24,7 @@ while(live_Camera.isOpened()):
     check_if_fire_detected = cv2.countNonZero(image_binary)
 
     if int(check_if_fire_detected) >= 20000 :
-        cv2.putText(frame,"Red Detected !",(300,60),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),2)
+        cv2.putText(frame,"Fire Detected !",(300,60),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),2)
 
     cv2.imshow("Fire Detection",frame)
 
