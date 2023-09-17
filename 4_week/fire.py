@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-live_Camera = cv2.VideoCapture(0)
+live_Camera = cv2.VideoCapture("fire.mp4")
 
 lower_bound = np.array([136,87,111])
 upper_bound = np.array([180,255,255])
